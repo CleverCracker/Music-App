@@ -29,38 +29,58 @@ header p {
     width: 100%;
 }
 
-.pads>div {
+.pads > div {
     height: 100px;
     width: 100px;
     flex: 1;
 }
 
 .pad1 {
-    background: darkred;
-
+    background: #8b0000;
 }
 
 .pad2 {
-    background: darkgreen;
-
+    background: #006400;
 }
 
 .pad3 {
-    background: darkmagenta;
-
+    background: #8b008b;
 }
 
 .pad4 {
-    background: navy;
-
+    background: #000080;
 }
 
 .pad5 {
-    background: darkcyan;
-
+    background: #008b8b;
 }
 
 .pad6 {
-    background: darkgoldenrod;
+    background: #b8860b;
+}
 
+.visual > div {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
 }
